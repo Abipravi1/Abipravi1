@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+<!-- FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+
+    <!-- AOS   -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+  <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/img/logo.svg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span><box-icon name='menu-alt-right' color='#ffffff' size='lg'></box-icon></span>
+              </button>
+              <div class="links collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item" data-aos="fade-down" data-aos-duration="1000">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-down" data-aos-duration="1200">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-down" data-aos-duration="1500">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-down" data-aos-duration="1700">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-down" data-aos-duration="1900">
+                        
+                    <a  class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      GetQuote
+                    </a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        <svg class="header-svg" width="605" height="700" viewBox="0 0 605 796" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_8_62)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M426.875 -20.0938C496.714 -13.061 574.505 -46.566 633.544 -8.58553C692.54 29.3674 700.452 110.846 729.617 174.663C756.04 232.482 781.408 287.943 797.201 349.524C817.306 427.92 885.009 521.652 834.9 585.195C781.546 652.853 662.792 587.326 583.366 620.687C518.574 647.902 494.035 735.895 426.875 756.578C353.979 779.027 273.627 766.053 202.733 737.907C126.117 707.49 30.9547 670.304 9.20991 590.762C-13.7334 506.836 93.7405 436.486 96.5591 349.524C99.2316 267.068 5.00848 197.298 24.5606 117.152C43.8905 37.9161 117.538 -26.4523 194.702 -52.7763C269.955 -78.448 347.767 -28.0598 426.875 -20.0938Z" fill="url(#paint0_linear_8_62)"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_8_62" x="0" y="-60" width="859" height="856" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="22"/>
+            <feGaussianBlur stdDeviation="3"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.00784314 0 0 0 0 0.196078 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_62"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_62" result="shape"/>
+            </filter>
+            <linearGradient id="paint0_linear_8_62" x1="-373.038" y1="358.247" x2="415.542" y2="1164.92" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E25544"/>
+            <stop offset="1" stop-color="#620C90"/>
+            </linearGradient>
+            </defs>
+        </svg>
+            <div class="header-content">
+                <p class="innovation">Innovation</p>
+                <p class="line2">Meets Creativity</p>
+                <p class="sub-content">Cultivating Digital Excellence through Innovative IT Solutions.
+                  Discover the Power of Abipravi's Expert Freelancers - Your Trusted Technology Partners.</p>
+            </div>
+            
+    </section>
+
+
+  <!-- MODAL FOR GET QUOTE -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Give Life To Your Idea</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form  id="form">
+          <div class="form-floating mb-3">
+            <input  required class="form-control" id="name" placeholder="name" required>
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" pattern="[0-9]{10}" class="form-control" required placeholder="Leave a comment here" id="mobile"></input>
+            <label for="floatingTextarea">Phone number</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" required placeholder="Leave a comment here" id="message"></textarea>
+            <label for="floatingTextarea">Let's shape your idea!</label>
+          </div>
+          <button type="submit" class="btn btn-submit" id="submitBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS MESSAGE -->
+
+<div class="modal fade" id="exampleModal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Success</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thanks for contacting us! Our team will reach out to you soon.
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- ERROR MESSAGE -->
+
+<div class="modal fade" id="exampleModal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Error !</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Due to some internal server error, we are not able to accept your request. Please try after some time ! 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ABOUT US SECTION -->
+
+<section id="about" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
+  <div class="about-container" >
+      <div class="about-us">
+          <hr class="hr1">
+          <span>Know Us Better!</span>
+      </div>
+      <h2>About Us</h2>
+      <p class="about-us-content">We take pride in delivering elegant and professional solutions that cater to all your digital needs. Whether you're a startup aiming to make your mark or an established business seeking to enhance your online presence we elevate your digital presence with our elegant, top-quality solutions today.</p>
+      <hr class="break">
+      <div class="about-workers">
+          <h2 class="abt-workers-head">About Workers</h2>
+          <p class="about-us-content">At Abipravi, our team comprises 10 highly skilled freelancers, each with a rich history of professional experience gained from various projects. Their expertise and commitment to excellence are the driving forces behind our success. We take pride in our diverse portfolio, which demonstrates our adaptability and creativity. Whether your project is large or small, our dedicated team is ready to provide customized, impactful IT solutions.</p>
+      </div>
+  </div>       
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="scrollspy">
+  <div class="project-head">
+    <hr class="project-hr">
+    <h3 class="phead">Inspired Creations</h3>
+    <hr class="project-hr">
+  </div>
+  <div class="project-container">
+      <div class="project hoverable">
+          <a href="#">
+              <div class="img-container">
+                  <img class="pimg" src="./img/pr1.png" alt="Project Image">
+              </div>
+              
+          </a>
+          <h3 class="project-title">Biscuit.</h3>
+          <p class="ptext">Biscuit is a new AI bot that can produce actionable advice, free tools & expert perspectives based on latest trend from a description in natural language.</p>
+      </div>
+      
+      <div class="project hoverable">
+          <a href="#">
+              <div class="img-container">
+                  <img class="pimg" src="./img/pr3.png" alt="Project Image">
+              </div>
+              
+          </a>
+          <h3 class="project-title">Smart Device</h3>
+          <p class="ptext"> The website is a centralized platform that allows users to seamlessly add, manage, and control their devices, while also providing access to detailed reports and analytics for informed decision-making.</p>
+      </div>
+      <div class="project hoverable">
+          <a href="#">
+              <div class="img-container">
+                  <img class="pimg" src="./img/pr4.png" alt="Project Image">
+              </div>
+              
+          </a>
+          <h3 class="project-title">ESTU</h3>
+          <p class="ptext">To get the most out of your student life, you have to get the most out of your money. ESTU is a social, experiential, and financial tool for students, educational institutions, and their members that integrates all facets of a student's life into a single app.</p>
+      </div>
+      
+  </div>
+</section> 
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" data-aos="zoom-in-down" data-aos-duration="1300">
+  <div class="testi-head">
+    <h2>"Testimonials</h2>
+    <hr class="testi-hr">
+  </div>
+
+  <div class="testies">
+        <div class="testi-content" data-aos="fade-right"data-aos-duration="1300">
+         <div class="testi-header">
+          <box-icon class="user-icon" name='user-circle' color='#ffffff' size="lg" ></box-icon>
+          <span class="user">Chaya Time</span>
+         </div>
+          <p>"We at Chaya Time are extremely pleased with Abipravi's billing software. Their solution has streamlined our operations and made managing our tea shops a breeze. Abipravi's team has been responsive and professional throughout the entire process. Thanks to their software, we can now focus on what we do best – serving our customers the perfect cup of tea."
+          </p>
+        </div>
+      
+        <div class="testi-content" data-aos="fade-left"data-aos-duration="1300">
+          <div class="testi-header">
+            <box-icon class="user-icon" name='user-circle' color='#ffffff' size="lg" ></box-icon>
+            <span class="user">Biscuits</span>
+           </div>
+          <p>"I've been working with Abipravi for quite some time now, and their expertise in AI and technology is truly impressive. They are like the 'Biscuit' of the AI world, providing insightful solutions and guidance that make complex tasks seem simple. Abipravi has been an invaluable partner for us in our AI projects, and I couldn't be more satisfied with the results."
+            </p>
+        </div>
+    
+      
+        <div class="testi-content" data-aos="fade-right"data-aos-duration="1300">
+          <div class="testi-header">
+            <box-icon class="user-icon" name='user-circle' color='#ffffff' size="lg" ></box-icon>
+            <span class="user">ESTU Bank</span>
+           </div>
+          <p>"Abipravi has been a game-changer for Etsu Bank. Their UPI transaction facility and currency conversion services have significantly enhanced our customers' banking experience. Their cutting-edge technology and efficient support have been instrumental in helping us stay ahead in the digital banking landscape. We highly recommend Abipravi to any financial institution looking for innovative solutions."</p>
+        </div>
+        <div class="testi-content" data-aos="fade-left"data-aos-duration="1300">
+          <div class="testi-header">
+            <box-icon class="user-icon" name='user-circle' color='#ffffff' size="lg" ></box-icon>
+            <span class="user">Vedha Finance</span>
+           </div>
+          <p>"Abipravi has been an invaluable partner for Vedha Finance. Their billing software and expertise in financial techniques have streamlined our operations and brought about increased efficiency. Abipravi's commitment to maintaining client details and providing excellent support has allowed us to focus on what we do best – serving our customers. We're extremely satisfied with their services and look forward to a long and prosperous partnership."</p>
+        </div>
+      
+    
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<section id="footer">
+  <footer class="footer-container">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col name">
+          Abi Pravi
+        </div>
+        <div class="col address">
+          "We are Abipravi, an innovative IT solutions provider specializing in tailored software solutions. Our expertise in crafting custom software has empowered companies across various sectors. Whether it's streamlining operations, facilitating seamless transactions, or optimizing finance management, we're your dedicated partner for success."
+        </div>
+      </div>
+    </div>
+
+    <div class="icons">
+      <a href="https://wa.me/8870652361" target="_blank">
+        <box-icon name='whatsapp-square' type='logo' class="icons" size="md" ></box-icon>
+      </a>
+      <a href="mailto:abipravisoftwares@gmail.com" target="_blank">
+        <box-icon name='gmail' type='logo' class="icons" size="md" ></box-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/praveen-kumar-9b09441b7/" target="_blank">
+        <box-icon type='logo' class="icons" name='linkedin' size="md"></box-icon>
+      </a>
+    </div>
+
+  <p class="copyrights">Copyrights © ABIPRAVI</p>
+  </footer>
+</section>
+
+<!-- TO TOP BUTTON -->
+
+<div class="top-to-btn" id="top-btn">
+  <button class="btn btn-danger btn-floating btn-md" >
+      <box-icon class="top-icon" color="#ffffff" name='chevron-up' type='solid' size="sm" ></box-icon>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+   <!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<!-- BOX ICONS -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<!-- EMAIL JS -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="index.js"></script>

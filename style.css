@@ -1,0 +1,578 @@
+html,body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body
+{
+    background-color: #000232;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav-link
+{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-left: .75rem;
+}
+
+.nav-link:hover
+{
+    color: #FFDF00;
+}
+
+.nav-link:focus
+{
+    color: #FFDF00;
+}
+
+#header
+{
+    position: relative;
+}
+
+.header-svg
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    max-width: 605px;
+    z-index: -1;
+    
+}
+
+
+
+.navbar-collapse
+{
+    flex-grow: 0;
+}
+
+
+
+.innovation
+{
+    font-size: 5.5rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.line2
+{
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.sub-content
+{
+    margin: 0;
+    color: white;
+}
+
+.header-content
+{
+    width: 75%;
+    padding:9% 8% ;
+}
+
+/* ABOUT - US SECTION */
+
+.about-container
+{
+    background-image: url('/img/about.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.about-container
+{
+    border: 1px solid #AAAAAA;
+    background-color:rgba(133, 129, 129, 0.2);
+    border-radius: 3rem;
+    padding: 5%;
+    margin: 5rem 5rem;
+}
+
+.about-us
+{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.hr1
+{
+    width: 60%;
+    border-top: 5px solid white;
+    opacity: 1;
+    position: relative;
+    top: 2.65rem;
+    margin-right: .5rem
+}
+
+.about-us span
+{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#about h2
+{
+    font-weight: 600;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.about-us-content
+{
+    color: white;
+    margin-top: 2.15rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.break
+{
+    margin: 3rem auto;
+    border-top: 4px dashed white;
+    opacity: 1;
+    width: 70%;
+}
+
+.abt-workers-head
+{
+    text-align: right;
+}
+
+.about-svg
+{
+    margin-top: 4rem;
+} 
+
+
+/* PROJECTS SECTION */
+
+#projects
+{
+    background-image: url('/img/projects.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.project
+{
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 20rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 15px;
+    background: linear-gradient(to top, #c0367b 50%, #c5cdd9 50%);
+    background-size: 100% 200%;
+    background-position: top ;
+    transition: all .5s ease-out;
+}
+.project:hover
+{
+    background-position: bottom ;
+    height: auto;
+    color: white;
+}
+
+.project:hover .project-title
+{
+    color: white;
+}
+
+.project:hover .img-container 
+{
+    border: 8px solid #c0367b; 
+}
+
+.phead
+{
+    
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.ptext
+{
+    padding:5px 0 5px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.project-title
+{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.img-container
+{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: -7rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.project-hr
+{
+    width: 30%;
+    border-top: 5px solid white;
+    opacity: 1;
+    margin-top: 1.5rem;
+}
+
+.pimg
+{
+    width: 250px;
+    height: 250px;
+}
+
+.project-head
+{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: #A23069;
+    color: white;
+    padding: 10px;
+}
+
+/* TESTIMONIALS */
+
+#testimonials
+{
+    margin-top: 3rem;
+    padding: 2% 7%;
+    background-image: url('./img/testi.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.testi-head
+{
+    display: flex;
+    color: white;
+}
+
+.testi-head h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.testi-hr  
+{
+    width: 60%;
+    border-top: 5px solid white;
+    opacity: 1;
+    margin: 2rem;
+}
+
+.testies
+{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testi-header
+{
+    display: flex;
+}
+
+.testi-content
+{
+    background-color:rgba(133, 129, 129, 0.2);
+    border-radius: 1.25rem;
+    padding: 5%;
+    width: 20rem;
+    margin: 2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.user
+{
+    font-size: 1.5rem;
+}
+
+
+/* FOOTER */
+
+#footer
+{
+    color: black;
+    padding: 3% 15%;
+    padding-bottom: 1%;
+    background-color: rgb(240, 234, 234);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.name
+{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.address
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+.icons
+{  
+    margin: 1.25rem;
+}
+
+
+footer a 
+{
+    text-decoration: none;
+}
+
+.copyrights
+{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+} 
+
+/* BACK TO TOP BTN */
+.top-to-btn
+{
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    visibility: hidden;
+
+}
+.btn-danger
+{
+    background-color:#A23069;
+    border: 2px solid #A23069;
+}
+.btn-danger:hover
+{
+    background-color:#A23069;
+    border: 2px solid #A23069;
+}
+
+/* MODAL */
+
+.modal-title 
+{
+    font-weight: 700;
+}
+
+.form-control
+{
+    font-weight: 500;
+}
+
+.btn-submit
+{
+    background-color: #A23069;
+    color: white;
+}
+.btn-submit:hover
+{
+    background-color: #A23069;
+    color: white;
+}
+
+.form-floating label
+{
+    font-weight: 600;
+}
+
+#exampleModal2 .modal-body
+{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* GENERAL SHOW CLASS */
+
+.show
+{
+    visibility: visible;
+}
+
+
+@media  screen and (max-width:600px) 
+{
+    
+    .header-content
+    {
+        width: 100%;
+        padding-left: 5%;
+    }
+    .innovation
+    {
+        font-size: 3.5rem;
+    }    
+    .line2
+    {
+        font-size: 3.5rem;
+    }
+    .header-svg
+    {
+        height: 45rem;
+    }
+    
+    .about-us span
+    {
+        font-size: 1.5rem;
+    }
+    .about-container
+    {
+        margin: 3rem 2rem;
+    }
+    .about-us-content
+    {
+        font-size: 1rem;
+    }
+    .testi-content
+    {
+        padding-top: 7%;
+    }
+    .address
+    {
+        margin-top: 1.15rem;
+    }
+    .icons
+    {
+        margin: .75rem;
+    }
+    
+    .testi-svg 
+    {
+            position: absolute;
+            right: 0;
+            opacity: 0.7;
+            top: 372rem;
+            z-index: -2;
+    }
+    
+}
+@media  screen and (max-width:990px) 
+{
+        .navbar-nav
+    {
+            width: 15rem;
+            border-radius: 2rem;
+            height: 20rem;
+            font-size: 1.25rem;
+            text-align: center;
+            background-color: #d6d9e1;
+            position: absolute;
+            right: 0;
+    }
+
+    .nav-link
+    {
+        color: black;
+        margin: .3rem;
+    }
+}
+
+
+@media  screen and (max-width:880px) 
+{
+    .img-container
+    {
+        height: 170px;
+        width: 170px;
+        margin: 0 auto;
+        margin-top: -5rem;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .pimg
+    {
+        width: 170px;
+        height: 170px;
+    }
+    .project
+    {
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 18rem;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 15px;
+        background: linear-gradient(to top, #c0367b 50%, #c5cdd9 50%);
+        background-size: 100% 200%;
+        background-position: top ;
+        transition: all .5s ease-out;
+    }
+
+}
+
+@media  screen and (max-width:1691px) 
+{
+    .testi-content
+    {
+        background-color:rgba(133, 129, 129, 0.2);
+        border-radius: 1.25rem;
+        padding: 5%;
+        display: flex;
+        flex-flow: row wrap;
+        width: 20rem;
+        flex-basis: auto;
+        margin: 2rem auto;
+        font-size: 1.15rem;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+  
