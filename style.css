@@ -55,6 +55,11 @@ body
     flex-grow: 0;
 }
 
+.navbar-brand img
+{
+    width: 100px;
+    height: 100px;
+}
 
 
 .innovation
@@ -212,6 +217,7 @@ body
 .project:hover .img-container 
 {
     border: 8px solid #c0367b; 
+    transition: 0.2s ease-in-out;
 }
 
 .phead
@@ -224,9 +230,9 @@ body
 .ptext
 {
     padding:5px 0 5px 10px;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 
 }
 
@@ -234,6 +240,7 @@ body
 {
     text-align: center;
     color: #000;
+    margin-top: 1.25rem;
     font-weight: bold;
 }
 
@@ -246,6 +253,7 @@ body
     margin-top: -7rem;
     overflow: hidden;
     border-radius: 50%;
+    transition: .2s ease-in-out;
 }
 
 .project-hr
@@ -302,7 +310,7 @@ body
     width: 60%;
     border-top: 5px solid white;
     opacity: 1;
-    margin: 2rem;
+    margin: auto;
 }
 
 .testies
@@ -310,16 +318,19 @@ body
     color: white;
     display: flex;
     flex-wrap: wrap;
+    /* gap: 10px; */
 }
 
 .testi-header
 {
     display: flex;
+    gap: 10px;
+    font-weight: bolder;
 }
 
 .testi-content
 {
-    background-color:rgba(133, 129, 129, 0.2);
+    background-color:rgb(66 56 111);;
     border-radius: 1.25rem;
     padding: 5%;
     width: 20rem;
@@ -332,6 +343,7 @@ body
 .user
 {
     font-size: 1.5rem;
+    color:#A23069
 }
 
 
@@ -562,14 +574,11 @@ footer a
 {
     .testi-content
     {
-        background-color:rgba(133, 129, 129, 0.2);
+        background-color:rgb(66 56 111);;
         border-radius: 1.25rem;
         padding: 5%;
-        display: flex;
-        flex-flow: row wrap;
         width: 20rem;
-        flex-basis: auto;
-        margin: 2rem auto;
+        margin: 2rem;
         font-size: 1.15rem;
         font-weight: 600;
         text-align: left;
