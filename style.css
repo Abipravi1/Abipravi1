@@ -93,13 +93,6 @@ body
 
 /* ABOUT - US SECTION */
 
-.about-container
-{
-    background-image: url('/img/about.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-
-}
 
 .about-container
 {
@@ -144,7 +137,7 @@ body
 {
     color: white;
     margin-top: 2.15rem;
-    font-size: 1.5rem;
+    font-size:1.5rem;
     font-weight: 400;
     text-align: justify;
 }
@@ -175,7 +168,7 @@ body
     background-image: url('/img/projects.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
 }
 
 .project-container
@@ -193,7 +186,7 @@ body
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 33rem;
     width: 20rem;
     border: 1.5px solid #e2e8f0;
     border-radius: 15px;
@@ -205,7 +198,7 @@ body
 .project:hover
 {
     background-position: bottom ;
-    height: auto;
+    height: 33rem;
     color: white;
 }
 
@@ -229,7 +222,7 @@ body
 
 .ptext
 {
-    padding:5px 0 5px 10px;
+    padding:3%;
     font-size: 1.35rem;
     font-weight: bold;
     text-align: left;
@@ -287,7 +280,7 @@ body
 #testimonials
 {
     margin-top: 3rem;
-    padding: 2% 7%;
+    padding: 2% 5%;
     background-image: url('./img/testi.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -318,7 +311,7 @@ body
     color: white;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 10px; */
+    justify-content: center;
 }
 
 .testi-header
@@ -332,7 +325,7 @@ body
 {
     background-color:rgb(66 56 111);;
     border-radius: 1.25rem;
-    padding: 5%;
+    padding: 3%;
     width: 20rem;
     margin: 2rem;
     font-size: 1.15rem;
@@ -369,6 +362,7 @@ body
 {
     font-size: 1.25rem;
     font-weight: 700;
+    text-align: left;
 }
 
 
@@ -483,11 +477,12 @@ footer a
     }
     .about-container
     {
-        margin: 3rem 2rem;
+        margin: 3rem 1rem;
     }
     .about-us-content
     {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-align: left;
     }
     .testi-content
     {
@@ -502,14 +497,6 @@ footer a
         margin: .75rem;
     }
     
-    .testi-svg 
-    {
-            position: absolute;
-            right: 0;
-            opacity: 0.7;
-            top: 372rem;
-            z-index: -2;
-    }
     
 }
 @media  screen and (max-width:990px) 
@@ -558,7 +545,7 @@ footer a
         margin-right: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 33rem;
         width: 18rem;
         border: 1.5px solid #e2e8f0;
         border-radius: 15px;
